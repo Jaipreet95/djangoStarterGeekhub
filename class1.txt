@@ -1,15 +1,19 @@
-virtualenvwrapper
-sudo apt install virtualenvwrapper
-
 Create a virtualenv
     1) Using virtualenv 
         Go to the folder where your environment resides
-        ```virtualenv <name of env>```
-        ```cd <name of env>/bin```
-        ```source activate```
+        ```
+            virtualenv <name of env>
+            cd <name of env>/bin
+            source activate
+        ```
 
     2) Using virtualenvwrapper
-          mkvirtualenv -> creates a virtual env  
-          ```mkvirtualenv <name of env> ```  
-          rmvirtualenv
+          virtualenvwrapper
+          sudo apt install virtualenvwrapper
+          edit bashrc as required
+          mkvirtualenv # creates a virtual env  
+          ```mkvirtualenv <name of env> --python=<path of the interpretor>```  
+          ```rmvirtualenv <name of env>  #removes the virtualenv```
           setvirtualenvproject  
+            #sets the path of the virtualenv for that particular project
+            #The env should be activated before using it
